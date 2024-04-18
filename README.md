@@ -1,5 +1,7 @@
 # github-moodle-lab
 
-This repository is the base repository that students will fork and use for the Github lab.
+Please upload any changes to the Mango source to their respective branches. 
 
-It contains a single PHP file Hello.php. Students will find problems in this file and write pull requests for the solution during the lab.
+DO NOT MERGE TO MAIN UNTIL GIVEN APPROVAL.
+
+
