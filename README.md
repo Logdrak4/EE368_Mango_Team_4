@@ -1,5 +1,4 @@
 # github-moodle-lab
+Author's guide link:
+https://docs.google.com/document/d/1Ez4BtwJt5PJQuVU-vGtWC0lwMETtwsFMndu82eSZ9CI/edit?usp=sharing
 
-This repository is the base repository that students will fork and use for the Github lab.
-
-It contains a single PHP file Hello.php. Students will find problems in this file and write pull requests for the solution during the lab.
