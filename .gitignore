@@ -1,0 +1,6 @@
+classes/
+.settings/
+.vscode/
+build/
+src_gen/
+.DS_Store
