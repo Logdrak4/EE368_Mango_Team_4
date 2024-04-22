@@ -109,9 +109,15 @@ public class ReportWorkItem implements WorkItem {
 
         // Create a list of DataPointVOs to which the user has permission.
         DataPointDao dataPointDao = new DataPointDao();
+        ReportDao reportDao = new ReportDao();
         List<ReportDao.PointInfo> points = new ArrayList<ReportDao.PointInfo>(reportConfig.getPoints().size());
         for (ReportPointVO reportPoint : reportConfig.getPoints()) {
             DataPointVO point = dataPointDao.getDataPoint(reportPoint.getPointId());
+            Boolean scatterChart = reportDao.isScatterChart();
+            String plotTitle = reportDao.getPlotTitle();
+            String xAxisTitle = reportDao.getXAxisTitle();
+            String yAxisTitle = reportDao.getYAxisTitle();
+            int referenceLine = reportDao.getReferenceLine();
             if (point != null && Permissions.hasDataPointReadPermission(user, point)) {
                 String colour = null;
                 try {
